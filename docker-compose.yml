@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  db:
+    container_name: postgres_consolidate-data-provider-service
+    image: postgres:14.1-alpine
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSRGRESS_DB=postgres
+
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis
+    ports:
+      - "6379:6379"
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8081:8081"
+
+
+networks:
+  broker-kafka:
+    driver: bridge

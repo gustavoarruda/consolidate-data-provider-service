@@ -1,0 +1,1 @@
+    CREATE SCHEMA IF NOT EXISTS consolidate_data_provider_service;
