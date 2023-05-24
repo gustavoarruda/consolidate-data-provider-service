@@ -83,3 +83,11 @@ curl --location 'localhost:8094/v1/movement' \
     }
 ]'
 ```
+
+### - **Endpoint da API gerar relatorio (pdf) do saldo:**
+
+```
+curl --location 'localhost:8093/v1/balance/report/127f2c03-61d3-46a9-a467-34d582c43fe0?date=2023-05-07'
+```
+
+
