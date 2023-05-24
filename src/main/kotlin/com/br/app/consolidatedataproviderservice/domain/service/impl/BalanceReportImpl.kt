@@ -4,6 +4,7 @@ import com.br.app.consolidatedataproviderservice.domain.entities.Balance
 import com.br.app.consolidatedataproviderservice.domain.service.BalanceReportService
 import com.itextpdf.text.Document
 import com.itextpdf.text.Paragraph
+import com.itextpdf.text.pdf.PdfWriter
 import org.springframework.stereotype.Service
 import java.io.ByteArrayOutputStream
 
@@ -20,6 +21,8 @@ class BalanceReportImpl : BalanceReportService{
         val document = Document()
         val outputStream = ByteArrayOutputStream()
         try {
+            // Create a PdfWriter using the ByteArrayOutputStream
+            val writer = PdfWriter.getInstance(document, outputStream)
             document.open()
             document.add(Paragraph("Balance Report"))
             document.add(Paragraph("Date: ${balance.date}"))
