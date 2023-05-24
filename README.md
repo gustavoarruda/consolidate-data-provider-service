@@ -41,7 +41,7 @@ docker-compose possui também o redis-commander usado para visualizar, editar e 
 
 Foi configurado também para este projeto, um Dockerfile simples, que consiste em pegar o jar gerado pelo projeto, que já
 é auto-executável, e embutir em uma imagem docker junto do openjdk 8. As imagens compiladas estão disponíveis
-em: https://hub.docker.com/repository/docker/gustavoanalistabr/cash-flow-service
+em: https://hub.docker.com/repository/docker/gustavoanalistabr/consolidate-data-provider-service
 
 Para o ambiente de desenvolvimento, também está disponível um arquivo docker-compose, na pasta infra, que levanta os
 serviços de banco de dados, kafka e do Kafdrop para acessar cliente do kafka.
