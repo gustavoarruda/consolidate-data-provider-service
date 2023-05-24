@@ -54,7 +54,7 @@ serviços de banco de dados, kafka e do Kafdrop para acessar cliente do kafka.
 
 ### Fluxo de Relatório Consolidado:
 
-[![fluxo](docs/solucao-fluxo-relatorio-consolidado.png)]
+[![fluxo](docs/solucao-fluxo-relatorio-consolidado.png)](https://dbdiagram.io/d/5e285bfd9e76504e0ef08a7c)
 
 ### Como inciar o serviço:
 
