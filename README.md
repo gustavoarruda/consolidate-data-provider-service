@@ -1,9 +1,11 @@
 # Serviço de Provedor de Saldo
 
-Serviço de Provedor de Saldo com a finalidade de estudos.
+Serviço de Provedor de Saldo com a finalidade de atender um desafio técnico:
+
+## Descrição do Projeto
 
 O projeto utiliza um serviço responsavel por prover o saldo consolidado dos lançamentos de créditos e débitos. Este
-projeto consome mensagens de um tópico d kafka que está containerizado no serviço **consolidate-data-provider-service**.
+projeto consome mensagens de um tópico do kafka que está containerizado no serviço **cash-flow-management-service**.
 
 ### Versão Java
 
