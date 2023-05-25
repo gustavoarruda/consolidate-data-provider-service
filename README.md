@@ -60,8 +60,9 @@ serviços de banco de dados, kafka e do Kafdrop para acessar cliente do kafka.
 
 ### Como inciar o serviço:
 
-#### Antes de iniciar este serviço é necessário executar o comando **docker-compose up -d** no serviço *
-*CASH-FLOW-MANAGEMENT-SERVICE**
+#### Antes de iniciar este serviço é necessário executar o comando **docker-compose up -d** no serviço 
+**CASH-FLOW-MANAGEMENT-SERVICE** (no repositório git contem todos os detalhes do projeto cash-flow-management-service.
+https://github.com/gustavoarruda/cash-flow-management-service)
 
 ```
 docker-compose up -d
